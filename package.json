@@ -1,0 +1,25 @@
+{
+  "name": "measured",
+  "version": "0.1.0",
+  "description": "chart window.performance.measures ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "window.performance",
+    "measure",
+    "measures",
+    "mark",
+    "marks"
+  ],
+  "author": "stanimirovv",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "gulp": "^4.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
