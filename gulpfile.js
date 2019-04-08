@@ -1,6 +1,10 @@
+const gulp = require('gulp');
+const gp_uglify = require('gulp-uglify-es').default;
+
 function defaultTask(cb) {
-  // place code for your default task here
-  cb();
+  return gulp.src(['src/index.js'])
+  .pipe(gp_uglify())
+  .pipe(gulp.dest('build'));
 }
 
-exports.default = defaultTask
+exports.default = defaultTask;
