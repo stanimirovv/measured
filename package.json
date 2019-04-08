@@ -4,7 +4,9 @@
   "description": "chart window.performance.measures ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp default",
+    "lint": "./node_modules/.bin/eslint  src/index.js"
   },
   "keywords": [
     "window.performance",
@@ -20,6 +22,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "gulp": "^4.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-eslint": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^1.0.4"
   }
 }
