@@ -1,6 +1,8 @@
 # Overview
 Attaches to the [window.performance measures](https://developer.mozilla.org/en-US/docs/Web/API/Window/performance) ; draws the measures with same name in a graph so you can easily track different values.
 
+Each screen shows the name of the measure, the graph composed of all measures with this (non unique) value, the minimum and maximum value in ms.
+
 ![example 1](https://raw.githubusercontent.com/stanimirovv/measured/master/media/example-1.png)
 ![example 2](https://raw.githubusercontent.com/stanimirovv/measured/master/media/example-2.png)
 
