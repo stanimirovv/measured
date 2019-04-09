@@ -1,4 +1,4 @@
-const conf = {
+let conf = {
   canvas: { height: 150, width: 300, style: 'border:1px solid green;position:fixed;top:0;left:0' },
   header: { text: '15px Arial ', x: 10, y: 20 },
   defaultRefreshTimeMs: 1000,
@@ -60,7 +60,6 @@ function MarkChart(customConf) {
     if (this.measureToViewLabel) {
       measure = computedMeasures[this.measureToViewLabel];
     } else {
-      console.log(computedMeasures);
       const measureNames = Object.keys(computedMeasures);
       const idx = measureToViewIdx % measureNames.length;
       const key = measureNames[idx];
