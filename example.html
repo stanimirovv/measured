@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script src="src/index.js"></script>
+  </head>
+  <body>
+    <!-- page content -->
+  </body>
+  <script>
+    let mc;
+    window.onload = () => {
+        performance.mark("mySetTimeout-start");
+        
+        window.setTimeout( () => {performance.mark("mySetTimeout-end"); performance.measure( "mySetTimeout", "mySetTimeout-start", "mySetTimeout-end"); }, 2500);
+        window.setTimeout( () => {performance.mark("mySetTimeout-end"); performance.measure( "mySetTimeout", "mySetTimeout-start", "mySetTimeout-end"); }, 500);
+        window.setTimeout( () => {performance.mark("mySetTimeout-end"); performance.measure( "mySetTimeout", "mySetTimeout-start", "mySetTimeout-end"); }, 700);
+        window.setTimeout( () => {performance.mark("mySetTimeout-end"); performance.measure( "mySetTimeout", "mySetTimeout-start", "mySetTimeout-end"); }, 1500);
+        window.setTimeout( () => {performance.mark("mySetTimeout-end"); performance.measure( "mySetTimeout", "mySetTimeout-start", "mySetTimeout-end"); }, 2000);
+        window.setTimeout( () => {performance.mark("mySetTimeout-end"); performance.measure( "mySetTimeout", "mySetTimeout-start", "mySetTimeout-end"); }, 1000);
+
+        // Create the object
+        mc = new MarkChart();
+        // Draw the Canvase
+        mc.draw();
+        // Select measure to track, this is optional, you can click on the canvas to move through the different measures
+        mc.select('mySetTimeout');
+        // Update the canvas with measures
+        mc.update();
+
+        // You can also make an automatic update on time:
+        // mc.autorefresh(); // You can optionally pass the miliseconds of refresh, default is 1000 and is part of the config
+    }
+  </script>
+</html>
